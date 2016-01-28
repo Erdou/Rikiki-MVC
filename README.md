@@ -8,11 +8,15 @@ Version: 1.0.1
 - Apache **with mod_rewrite activated**
 - MySQL / MariaDB
 
+#### Composer
+
+**Install**
 - If not already installed, install Composer:
   - Linux / MacOS: in `app/` folder, run:
     - `curl -sS https://getcomposer.org/installer | php`
   - Windows: https://getcomposer.org/Composer-Setup.exe
 
+**Run**
 - In the root folder, run `composer install`
 - Add Propel generator's path on the `PATH` environment variable of your OS
   - The path should be `[project_path]/app/vendor/propel/propel1/generator/bin/`
