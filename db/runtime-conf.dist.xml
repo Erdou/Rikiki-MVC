@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <log>
+        <type>file</type>
+        <ident>propel</ident>
+        <name>./app/log/propel.log</name>
+        <level>7</level>
+    </log>
+    <propel>
+        <datasources default="orm">
+            <datasource id="orm">
+                <adapter>mysql</adapter>
+                <connection>
+                    <classname>PropelPDO</classname>
+                    <dsn>mysql:host=[HOST];dbname=[DB_NAME];port=[PORT]</dsn>
+                    <user>[USER]</user>
+                    <password>[PASS]</password>
+                    <options>
+                        <option id="ATTR_PERSISTENT">false</option>
+                    </options>
+                    <attributes>
+                        <option id="ATTR_EMULATE_PREPARES">true</option>
+                    </attributes>
+                    <settings>
+                        <setting id="charset">utf8</setting>
+                    </settings>
+                </connection>
+            </datasource>
+        </datasources>
+        <debugpdo>
+            <logging>
+                <details>
+                    <method>
+                        <enabled>true</enabled>
+                    </method>
+                    <time>
+                        <enabled>true</enabled>
+                        <precision>3</precision>
+                    </time>
+                    <mem>
+                        <enabled>true</enabled>
+                        <precision>1</precision>
+                    </mem>
+                </details>
+            </logging>
+        </debugpdo>
+    </propel>
+</config>

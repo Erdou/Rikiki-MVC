@@ -1,0 +1,21 @@
+Options +SymLinksIfOwnerMatch
+FileETag none
+
+RewriteEngine on
+
+# Ressources
+RewriteRule ^sitemap\.xml$ - [L]
+RewriteRule ^robots\.txt$ - [L]
+RewriteRule ^.*\.(js|css|gif|jpg|jpeg|swf|png|ico|pdf|svg|woff|woff2|ttf|eot)$ - [L]
+
+# Preventing loops
+RewriteRule ^index.php?$ - [QSA,L]
+
+# Homepage
+RewriteRule ^/?$ index.php?page=home [QSA,L]
+
+# Pages
+RewriteRule ^([^/]+)/?$ index.php?page=$1 [QSA,L]
+
+# Redirect any other page to home
+RewriteRule ^.*$ / [QSA,R,L]

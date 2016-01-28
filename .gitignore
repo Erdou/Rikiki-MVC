@@ -1,0 +1,9 @@
+/app/composer.lock
+
+/app/config.php
+
+/db/build.properties
+
+/app/vendor/**
+
+/db/runtime-conf.xml

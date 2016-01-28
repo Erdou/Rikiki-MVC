@@ -1,0 +1,6 @@
+{
+  "require": {
+    "propel/propel1": "~1.7",
+    "smarty/smarty": "~3.1"
+  }
+}
