@@ -8,7 +8,6 @@ Version: 1.0.1
 - Apache **with mod_rewrite activated**
 - MySQL / MariaDB
 
-
 - If not already installed, install Composer:
   - Linux / MacOS: in `app/` folder, run:
     - `curl -sS https://getcomposer.org/installer | php`
