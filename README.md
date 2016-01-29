@@ -17,7 +17,7 @@ Version: 1.0.1
   - Windows: https://getcomposer.org/Composer-Setup.exe
 
 **Run**
-- In the root folder, run `composer install`
+- In the `app/` folder, run `composer install` to install decencies
 - Add Propel generator's path on the `PATH` environment variable of your OS
   - The path should be `[project_path]/app/vendor/propel/propel1/generator/bin/`
 
