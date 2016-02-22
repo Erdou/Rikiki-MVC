@@ -17,12 +17,12 @@ Version: 1.0.1
   - Windows: https://getcomposer.org/Composer-Setup.exe
 
 **Run**
-- In the `app/` folder, run `composer install` to install decencies
+- In the `app/` folder, run `composer install` to install dependencies
 - Add Propel generator's path on the `PATH` environment variable of your OS
   - The path should be `[project_path]/app/vendor/propel/propel1/generator/bin/`
 
 #### (For XAMPP users only)
-If you didn't configure PEAR/PHING yet, please do it:
+If you did not configure PEAR/PHING yet, please do it:
 
     pear config-set doc_dir C:\xampp\php\pear\docs
     pear config-set cfg_dir C:\xampp\php\pear\cfg
